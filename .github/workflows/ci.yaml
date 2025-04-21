@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - run: src/python my_script.py
+      - run: python src/my_script.py
       - run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt 
