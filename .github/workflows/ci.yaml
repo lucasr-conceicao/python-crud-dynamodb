@@ -17,3 +17,8 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt 
           pytest --cov=src --cov-report=html
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
+            SONAR_TOKEN: $ {{ secret.SONAR_TOKEN }}
