@@ -6,3 +6,6 @@ from src import my_script
 #     my_script.main()
 #     captured = capsys.readouterr()
 #     assert captured.out.strip() == "Hello, world!"
+
+def test_true():
+    assert True
